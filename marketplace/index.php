@@ -7,6 +7,12 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Index Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Index JavaScript -->
+    <script src="index.js"></script>
 </head>
 
 <?php
@@ -24,6 +30,30 @@ $result = mysqli_query($db, $query);
 
 while ($row = mysqli_fetch_array($result)) {
     //echo $row['Name'] . ' ' . $row['NickName'] . ': ' . $row['PrimaryColor'] . ' ' . $row['SecondaryColor'] . $row['Value'] . '<br />';
+}
+
+createMainMenu();
+
+// Creates the main menu for the site.
+function createMainMenu() {
+    $html = "";
+
+    // Initialize container div
+    $html .=    "<div class='container'>";
+
+    // Creates the squares for the main menu
+    for ($i = 0; $i < 12; $i++) {
+        $html .=    "<div class='col-xs-4'>
+                        <div class='square'>
+                            Hello
+                        </div>
+                    </div>";
+    }
+
+    // End container div
+    $html .=    "</div>";
+
+    echo $html;
 }
 
 ?>
