@@ -1,0 +1,137 @@
+/*
+Light Orange: #FF8923
+Dark Orange: #FF7B0A
+Light Blue: #0AD6FF
+Dark Blue: #0095B2
+
+Red: #DB5C44
+Green: #50CF4A
+*/
+
+body {
+    background-color: #eeeeee;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-bar {
+    background-color: #333333;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.page {
+    overflow: auto;
+}
+
+.page-fluid {
+    padding: 0px !important;
+}
+
+/*
+  Toolbar
+*/
+.toolbar {
+    margin-top: 50px;
+    height: 50px;
+    background-color: #0095B2;
+}
+
+.toolbar-list, .toolbar-grid {
+    height: 50px;
+    float: right;
+    font-size: 30px;
+    color: #0AD6FF;
+    padding-top: 7px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.toolbar-list:hover, .toolbar-grid:hover {
+    color: #FF8923;
+}
+
+/*
+  Grid
+*/
+.grid {
+    padding: 5px;
+}
+
+.grid-card {
+    margin: 5px;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+}
+
+.grid-card-color {
+    background-color: #ffffff;
+    height: 100%;
+    padding: 5px;
+    transition: background-color 0.25s;
+}
+
+.grid-card-color:hover {
+    background-color: #50CF4A;
+}
+
+.grid-card-content {
+    background-color: #ffffff;
+    height: 100%;
+    padding: 5px;
+}
+
+.grid-card-content-logo {
+    height: 100%;
+    background: url("/Resources/Img/Wisconsin.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.grid-break {
+    width: 100%;
+    overflow: auto;
+}
+
+/*
+  List card
+*/
+.list {
+    padding: 5px;
+}
+
+.list-card {
+    height: 50px;
+    margin: 5px;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+}
+
+.list-card:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.list-card-content {
+    border-radius: 2px;
+    background-color: #FF8923;
+    height: 100%;
+}
+
+/*
+  Misc.
+*/
+
+.col-lg-2, .col-md-2, .col-sm-3, .col-xs-4 {
+    padding: 0px !important;
+}
+
+.col-lg-4, .col-md-4, .col-sm-6, .col-xs-12 {
+    padding: 0px !important;
+}
+
+.container {
+    padding: 0px !important;
+    max-width: 960px !important;
+}
